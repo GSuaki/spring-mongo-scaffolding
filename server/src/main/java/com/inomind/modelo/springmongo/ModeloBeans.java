@@ -9,8 +9,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.inomind.modelo.springmongo.audit.AuditorAwareImpl;
 import com.inomind.modelo.springmongo.security.DefaultUser;
 import com.mongodb.Mongo;
@@ -30,6 +34,14 @@ public class ModeloBeans {
     @Autowired
     private Environment env;
 
+    @Bean
+    public ObjectMapper jsonObjectMapper(Jackson2ObjectMapperBuilder builder) {
+        return Jackson2ObjectMapperBuilder
+                .json()
+                .modules(new Jdk8Module(), new JavaTimeModule())
+                .build();
+    }
+    
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(12);
