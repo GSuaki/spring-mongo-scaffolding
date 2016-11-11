@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type"  content="text/html charset=UTF-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<table width="650" style="background-color:#FFFFFF;">
+			
+			<!-- HEADER -->
+			<tr style="background-color:#37A9E0;">
+				<td colspan="4" rowspan="" headers="">
+					<table height="150">
+						<tr>
+							<td colspan="2" rowspan="" headers="" style="padding:0px; padding-left:24px; color:#FFFFFF;" width="455">
+								<h1 style="margin-bottom:0px;">Pedidus</h1>
+								<h2 style="margin-top:0px;">$motivo - $dataAtual</h2>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<!-- ESPAÇAMENTO -->
+			<tr height="55" style="background-color:#FFFFFF; padding:0px;">
+				<td colspan="4" rowspan="" headers=""></td>
+			</tr>
+
+			<!-- CONTEUDO -->
+			<tr style="padding-right:10px; padding-left:10px; padding-top:0px; padding-bottom: 0px;">
+				<td colspan="4" rowspan="" headers="">
+					$conteudo
+				</td>
+			</tr>
+
+			<!-- ESPAÇAMENTO -->
+			<tr height="55" style="background-color:#FFFFFF; padding:0px;">
+				<td colspan="4" rowspan="" headers=""></td>
+			</tr>
+
+			<!-- FOOTER -->
+			<tr height="70" style="background-color:#222020; padding:0px;">
+				<td colspan="4" rowspan="" headers="" style="text-align:center;">
+					<a target="_blank" href="http://inomind.com.br" style="text-decoration:none;">
+						<img src="cid:logo_image" title="Pedidus" />
+					</a>
+				</td>
+			</tr>
+
+		</table>
+
+		<style type="text/css">
+			body{
+				color: #000000;
+				font-family: "Arial", "Helvetica"
+			}
+
+			h1{
+				font-size: 34px;
+				font-weight: bold;
+			}
+
+			h2{
+				font-size:18px;
+				font-weight: bold;
+			}
+
+			table{
+				width:650px;
+				border:0px;
+			}
+		</style>
+		
+	</body>
+</html>

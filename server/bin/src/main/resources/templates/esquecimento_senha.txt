@@ -1,0 +1,10 @@
+Olá #usuario
+
+Recebemos sua solicitação para trocar sua senha de acesso ao Pedidus.
+
+Clique no link abaixo para efetuar a troca.
+
+#link
+
+Pedidus
+www.inomind.com.br/pedidus
